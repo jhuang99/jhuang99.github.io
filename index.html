@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	 <head>
+	 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	 <title>Jiana Huang</title>
+	 <link rel="stylesheet" href="css/style.css"/>
+	 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	 <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+ <link link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type='text/css'>
+	 <link href='http://fonts.googleapis.com/css?family=Wellfleet' rel='stylesheet' type='text/css'>
+	 <link href='http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic' rel='stylesheet' type='text/css'> 
+	 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	 <link href='http://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+	 
+	</head>
+	<body>
+
+
+<!----- HEADER START---> 
+		<div class = "header" id="myHeader">
+			<div class="content">
+			<nav id="nav">
+			 <ul>
+			 <li><a href="#slide1" class="active" title="Next Section" >About Me</a></li>
+			 <li><a href="#slide2" title="Next Section">Experience</a></li>
+			 <li><a href="#slide3" title="Next Section">Contact Me</a></li>
+			 <li><a href="#slide4" title="Next Section">Thoughts</a></li>
+			 </ul>
+			</nav>
+			</div>
+		</div>
+<!----- SLIDES START ---> 
+		 <div id="slide1">
+		 	<div class="content" >
+		 		<img class = "profile_photo" src="img/square_face.png" alt="Avatar" >
+		 		<div class="quotes_container">
+					<h2 >Software Engineer @ Facebook, UC Berkeley Graduate </h3>
+			 	</div> 
+		 </div> 
+		 </div>
+		 <div id="slide2">
+			 <div class="content" >
+				<div class="quotes_container">
+					<h3 class="quotes"> I love climbing, creating new things</h3>
+			 	</div> 
+			 </div> 
+		 </div> 
+		 <div id="slide3">
+			 <div class="content">
+				 <div class="quotes_container">
+					 <h3 class="quotes">Launched stuff </h3>
+				 </div> 
+			 </div> 
+		 </div> 
+		 <div id="slide4">
+			 <div class="content">
+				 <div class="quotes_container">
+					 <h3 class="quotes">Insert Linked In here </h3>
+				 </div> 
+			 </div> 
+		 </div> 
+		 
+ <!----- SLIDES END --->
+<script>
+	 	window.onscroll = function() {moveHeader()};
+
+// Get the header
+	var header = document.getElementById("myHeader");
+
+	// Get the offset position of the navbar
+	var sticky = header.offsetTop;
+
+	// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+	function moveHeader() {
+	  if (window.pageYOffset >= sticky) {
+	    header.classList.add("sticky");
+	  } else {
+	    header.classList.remove("sticky");
+	  }
+	}
+
+	 </script>
+	</body>
+
+
+</html>
